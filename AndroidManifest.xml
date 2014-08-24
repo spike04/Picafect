@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.canvas.picafect2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.canvas.picafect2.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canvas.picafect2.Menu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canvas.picafect2.Effect_Choose"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.EFFECT_CHOOSE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canvas.picafect2.Effect_Normal"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.EFFECT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canvas.picafect2.Effects_Special"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.EFFECT_SPECIAL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canvas.picafect2.Effects_Combo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.EFFECTS_COMBO" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Image Flip -->
+        <activity
+            android:name="com.canvas.picafect2.ImageFlip"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.IMAGEFLIP" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Rotation -->
+        <activity
+            android:name="com.canvas.picafect2.ImageRotate"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.ROTATE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Brightness -->
+        <activity
+            android:name="com.canvas.picafect2.ImageBrightness"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.BRIGHTNESS" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Contrast -->
+        <activity
+            android:name="com.canvas.picafect2.ImageContrast"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.canvas.picafect2.CONTRAST" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Picafect</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="picafect">Picafect</string>
+	<string name="your_ad">Your advertisement Here</string>
+	<string name="add">Your Advertisement Here</string>
+	<string name="gallery">Gallery</string>
+	<string name="snap">Take a Snap</string>
+</resources>
